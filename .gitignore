@@ -105,6 +105,7 @@ dist
 
 .expo/
 dist/
+.idea/
 npm-debug.*
 *.jks
 *.p8
