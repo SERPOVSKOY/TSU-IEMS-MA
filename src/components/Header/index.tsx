@@ -1,11 +1,11 @@
 import React from 'react';
-import { Image, View } from 'react-native';
+import { Text, View } from 'react-native';
 import { styles } from './style';
 
 const Header = () => {
     return (
         <View style={styles.container}>
-            <Image source={require('./logo.jpg')} />
+            <Text style={styles.logo}>Том и Гарри</Text>
         </View>
     );
 };
