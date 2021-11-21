@@ -8,8 +8,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { MainPage } from './src/pages/MainPage';
 import { ContactsPage } from './src/pages/ContactsPage';
-import { QuestsPage } from './src/pages/QuestsPage';
 import { Header } from './src/components/Header';
+import { Games } from './src/pages/Games';
+import { ResultsPage } from './src/pages/ResultsPage';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -23,43 +24,48 @@ export default function App() {
     return (
         <SafeAreaView style={GlobalStyles.app}>
             <Header />
-                <NavigationContainer>
-                    <Tab.Navigator
-                        labeled={false}
-                        initialRouteName="MainPage"
-                        activeColor="#f0edf6"
-                        inactiveColor="#000000"
-                        barStyle={{ backgroundColor: '#827153' }}
-                    >
-                        <Tab.Screen
-                            name="MainPage"
-                            component={MainPage}
-                            options={{
-                                tabBarIcon: ({ color }) => (
-                                    <MaterialCommunityIcons name="home" color={color} size={26} />
-                                ),
-                            }}
-                        />
-                        <Tab.Screen
-                            name="QuestsPage"
-                            component={QuestsPage}
-                            options={{
-                                tabBarIcon: ({ color }) => (
-                                    <MaterialCommunityIcons name="flag" color={color} size={26} />
-                                ),
-                            }}
-                        />
-                        <Tab.Screen
-                            name="ContactsPage"
-                            component={ContactsPage}
-                            options={{
-                                tabBarIcon: ({ color }) => (
-                                    <MaterialCommunityIcons name="contacts" color={color} size={26} />
-                                ),
-                            }}
-                        />
-                    </Tab.Navigator>
-                </NavigationContainer>
+            <NavigationContainer>
+                <Tab.Navigator
+                    labeled={false}
+                    initialRouteName="MainPage"
+                    activeColor="#f0edf6"
+                    inactiveColor="#000000"
+                    barStyle={{ backgroundColor: '#827153' }}
+                >
+                    <Tab.Screen
+                        name="MainPage"
+                        component={MainPage}
+                        options={{
+                            tabBarIcon: ({ color }) => <MaterialCommunityIcons name="home" color={color} size={26} />,
+                        }}
+                    />
+                    <Tab.Screen
+                        name="Games"
+                        component={Games}
+                        options={{
+                            tabBarIcon: ({ color }) => <MaterialCommunityIcons name="flag" color={color} size={26} />,
+                        }}
+                    />
+                    <Tab.Screen
+                        name="ResultsPage"
+                        component={ResultsPage}
+                        options={{
+                            tabBarIcon: ({ color }) => (
+                                <MaterialCommunityIcons name="chart-line" color={color} size={26} />
+                            ),
+                        }}
+                    />
+                    <Tab.Screen
+                        name="ContactsPage"
+                        component={ContactsPage}
+                        options={{
+                            tabBarIcon: ({ color }) => (
+                                <MaterialCommunityIcons name="account-group" color={color} size={26} />
+                            ),
+                        }}
+                    />
+                </Tab.Navigator>
+            </NavigationContainer>
         </SafeAreaView>
     );
 }

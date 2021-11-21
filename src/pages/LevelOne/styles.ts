@@ -3,39 +3,33 @@ import { setFontStyles } from '../../common/GlobalStyles';
 
 export const styles = StyleSheet.create({
     sceneContainer: {
-        paddingLeft: '20px',
-        paddingRight: '20px',
+        paddingLeft: '10px',
+        paddingRight: '10px',
+        marginTop: '15px',
+        marginBottom: '15px',
+    },
+    container: {
+        marginTop: '15px',
+        paddingLeft: '40px',
+        paddingRight: '40px',
+        marginBottom: '15px',
+    },
+    text: {
+        textAlign: 'center',
+        marginBottom: '15px',
+        ...setFontStyles({ size: '15px' }),
     },
     buttonGameContainer: {
         marginTop: '20px',
         paddingLeft: '20px',
         paddingRight: '20px',
     },
-    wrapperImage: {
-        padding: '20px',
-    },
-    banner: {
-        height: '300px',
-        width: '100%',
-        marginBottom: '20px',
-    },
-    banner2: {
-        height: '288px',
-        width: '100%',
-        padding: '20px',
-        backgroundSize: 'contain',
-    },
     title: {
         textAlign: 'center',
-        color: '#857251',
-        marginBottom: '20px',
+        color: '#252424',
+        paddingTop: '10px',
+        paddingBottom: '10px',
         ...setFontStyles({ weight: 700 }),
-    },
-    text: {
-        textAlign: 'center',
-        color: '#212121',
-        marginBottom: '30px',
-        ...setFontStyles({ weight: 300, size: '18px' }),
     },
     text4: {
         textAlign: 'center',
