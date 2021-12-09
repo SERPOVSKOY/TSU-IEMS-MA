@@ -3,15 +3,15 @@ import { setFontStyles } from '../../common/GlobalStyles';
 
 export const Styles = StyleSheet.create({
     container: {
-        paddingTop: '30px',
-        paddingLeft: '20px',
-        paddingRight: '20px',
+        paddingTop: 30,
+        paddingLeft: 20,
+        paddingRight: 20,
     },
     banner: {
         display: 'flex',
-        height: '300px',
+        height: 300,
         width: '100%',
-        maxWidth: '335px',
+        maxWidth: 335,
     },
     conImage: {
         height: '100%',
@@ -20,7 +20,7 @@ export const Styles = StyleSheet.create({
     containerCon: {
         display: 'flex',
         flexDirection: 'row',
-        padding: '20px',
+        padding: 20,
     },
     con: {
         display: 'flex',
@@ -32,18 +32,18 @@ export const Styles = StyleSheet.create({
     title: {
         textAlign: 'center',
         color: '#857251',
-        ...setFontStyles({ weight: 700, size: '20px' }),
+        ...setFontStyles({ weight: 700, size: 20 }),
     },
     title3: {
         textAlign: 'center',
         color: '#857251',
-        marginTop: '30px',
-        ...setFontStyles({ weight: 700, size: '20px' }),
+        marginTop: 30,
+        ...setFontStyles({ weight: 700, size: 20 }),
     },
     title2: {
         textAlign: 'center',
         color: '#857251',
-        ...setFontStyles({ weight: 500, size: '15px' }),
+        ...setFontStyles({ weight: 500, size: 15 }),
     },
     link: {
         textAlign: 'center',
@@ -54,8 +54,8 @@ export const Styles = StyleSheet.create({
     subtitle: {
         textAlign: 'center',
         color: 'black',
-        marginBottom: '10px',
-        marginTop: '30px',
-        ...setFontStyles({ weight: 600, size: '18px' }),
+        marginBottom: 10,
+        marginTop: 30,
+        ...setFontStyles({ weight: 600, size: 18 }),
     },
 });

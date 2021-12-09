@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
     closeIcon: {
         backgroundColor: 'black',
         position: 'absolute',
-        top: '20px',
-        right: '20px',
+        top: 20,
+        right: 20,
     }
 });

@@ -14,7 +14,7 @@ const RegModal: FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClos
                     onPress={onClose}
                     style={styles.closeIcon}
                 />
-                <iframe style={{ overflowY: 'hidden' }} width="100%" height="100%" src="https://docs.google.com/forms/d/e/1FAIpQLScCUq5B9ydGtRc-A6jIQhicE5Gif396Rpg1uJ4aox5KXkpAWQ/viewform"> </iframe>
+                {/* <iframe style={{ overflowY: 'hidden' }} width="100%" height="100%" src="https://docs.google.com/forms/d/e/1FAIpQLScCUq5B9ydGtRc-A6jIQhicE5Gif396Rpg1uJ4aox5KXkpAWQ/viewform"></iframe> */}
             </View>
         </Modal>
     );

@@ -38,7 +38,7 @@ const InfoModal: FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClo
                         После выполнения всех заданий Вы можете ознакомиться с итогами перейдя в тревью вкладку нижнего меню
                     </Text>
                 </View>
-                <iframe width="100%" height="500px" src="https://docs.google.com/presentation/d/1BtAjgAr0UtssExSMNzv21FeLo1kXsels/embed?authuser=0"> </iframe>
+                {/* <iframe width="100%" height="500px" src="https://docs.google.com/presentation/d/1BtAjgAr0UtssExSMNzv21FeLo1kXsels/embed?authuser=0"> </iframe> */}
             </ScrollView>
         </Modal>
     );

@@ -12,12 +12,12 @@ const LevelTwo = () => {
             </View>
 
             <ScrollView horizontal style={{ height: '100%' }}>
-                <iframe
+                {/* <iframe
                     scrolling="yes"
                     width="520px"
                     height="520px"
                     src="https://docs.google.com/drawings/d/1lz3tIx95VEvUdMNZVdrTKZJYNP9PhMAd5JuXiWp8WiY/preview?ac=true&authuser=0"
-                />
+                /> */}
             </ScrollView>
         </ScrollView>
     );

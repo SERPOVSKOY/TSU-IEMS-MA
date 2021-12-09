@@ -22,6 +22,6 @@ export const styles = StyleSheet.create({
         textTransform: 'uppercase',
         letterSpacing: 3,
         textShadow: '3px 2px 4px #302f2f',
-        ...setFontStyles({ weight: '700', size: '20px' }),
+        ...setFontStyles({ weight: '700', size: 20 }),
     },
 });
