@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
         textAlign: 'center',
         color: '#857251',
         marginBottom: 30,
-        ...setFontStyles({ weight: 700, size: 20 }),
+        ...setFontStyles({ weight: '700', size: 20 }),
     },
     closeIcon: {
         backgroundColor: 'black',
@@ -25,7 +25,7 @@ export const styles = StyleSheet.create({
         textAlign: 'center',
         color: '#857251',
         marginBottom: 30,
-        ...setFontStyles({ weight: 700 }),
+        ...setFontStyles({ weight: '700' }),
     },
     container: {
         paddingTop: 50,

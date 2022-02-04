@@ -1,24 +1,23 @@
 import React from 'react';
-import { ScrollView, Text, View } from 'react-native';
+import { ScrollView, Text, View, Linking, Image, Button } from 'react-native';
 import { styles } from './styles';
 
-const LevelTwo = () => {
+function LevelTwo() {
+    const onClick = () => Linking.openURL('https://docs.google.com/drawings/u/0/d/1lz3tIx95VEvUdMNZVdrTKZJYNP9PhMAd5JuXiWp8WiY/preview?ac=true');
+
     return (
         <ScrollView style={{ height: '100%' }}>
             <View style={styles.sceneContainer}>
                 <Text style={styles.text}>
-                    После прохождения уровня 2 - вы можете проверить результаты, перейдя в третий пункт нижнего меню
+                    {'Ниже предоставлено поле с заданиями, которые нужно выполнить. Для начала игры нажмите на кнопку "Играть". Желаем удачной игры!.'}
                 </Text>
+                <View style={styles.buttonContainer}>
+                    <Button color="#9b1a1a" title="Играть" onPress={onClick} />
+                </View> 
             </View>
-
-            <ScrollView horizontal style={{ height: '100%' }}>
-                {/* <iframe
-                    scrolling="yes"
-                    width="520px"
-                    height="520px"
-                    src="https://docs.google.com/drawings/d/1lz3tIx95VEvUdMNZVdrTKZJYNP9PhMAd5JuXiWp8WiY/preview?ac=true&authuser=0"
-                /> */}
-            </ScrollView>
+            <View style={styles.containerTwo}>
+                <Image resizeMode='contain' source={require('./level2.jpg')} style={styles.banner} />    
+            </View>
         </ScrollView>
     );
 };

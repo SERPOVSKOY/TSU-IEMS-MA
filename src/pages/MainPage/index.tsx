@@ -4,14 +4,9 @@ import { styles } from './styles';
 import { RegModal } from './RegModal';
 import {InfoModal} from "./InfoModal";
 
-const MainPage: FC<{ navigation: any }> = ({ navigation }) => {
+const MainPage = () => {
     const [isOpenRegModal, setIsOpenRegModal] = useState(false);
     const [isOpenInfoModal, setIsOpenInfoModal] = useState(false);
-
-    const onClick = () => {
-        console.log('>', navigation)
-        navigation.navigate('QuestsPage')
-    };
 
     return (
         <View style={{ height: '100%' }}>
@@ -72,8 +67,6 @@ const MainPage: FC<{ navigation: any }> = ({ navigation }) => {
                     Возникнут вопросы - обращайтесь к организаторам. Мы Вам поможем!
                 </Text>
                 <View style={styles.buttonGameContainer}>
-                    <Text style={styles.text}>Для перехода к заданиям нажмите на кнопку ниже.</Text>
-                    <Button color="#9b1a1a" title="Играть" onPress={onClick} />
                     <Text style={styles.text4}>Желаем удачи в прохождении нашего квеста "Выбери свой путь"!</Text>
                 </View>
             </ScrollView>

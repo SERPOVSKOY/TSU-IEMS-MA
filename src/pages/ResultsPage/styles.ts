@@ -11,6 +11,6 @@ export const Styles = StyleSheet.create({
         textAlign: 'center',
         color: '#857251',
         marginBottom: 30,
-        ...setFontStyles({ weight: 700, size: 20 }),
+        ...setFontStyles({ weight: '700', size: 20 }),
     },
 });

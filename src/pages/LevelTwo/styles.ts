@@ -3,6 +3,10 @@ import { setFontStyles } from '../../common/GlobalStyles';
 
 export const styles = StyleSheet.create({
     sceneContainer: {
+        display: 'flex',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        alignItems: 'center',
         paddingLeft: 10,
         paddingRight: 10,
         marginTop: 15,
@@ -29,21 +33,21 @@ export const styles = StyleSheet.create({
         color: '#252424',
         paddingTop: 10,
         paddingBottom: 10,
-        ...setFontStyles({ weight: 700 }),
+        ...setFontStyles({ weight: '700' }),
     },
     text4: {
         textAlign: 'center',
         color: '#212121',
         marginBottom: 30,
         marginTop: 30,
-        ...setFontStyles({ weight: 300, size: 18 }),
+        ...setFontStyles({ weight: '300', size: 18 }),
     },
     text2: {
         textAlign: 'center',
         color: '#857251',
         marginTop: 30,
         marginBottom: 30,
-        ...setFontStyles({ weight: 700 }),
+        ...setFontStyles({ weight: '700' }),
     },
     text3: {
         paddingLeft: 20,
@@ -57,5 +61,25 @@ export const styles = StyleSheet.create({
         borderRadius: 10,
         width: 'fit-content',
         ...setFontStyles(),
-    }
+    },
+    banner: {
+        display: 'flex',
+        height: 400,
+        width: '100%',
+    },
+    buttonContainer: {
+        width: 200,
+    },
+    buttonContainer2: {
+        width: 100,
+    },
+    containerTwo: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingTop: 30,
+        paddingLeft: 20,
+        paddingRight: 20,
+    },
 });

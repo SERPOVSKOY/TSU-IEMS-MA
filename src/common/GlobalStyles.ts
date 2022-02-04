@@ -1,9 +1,9 @@
 import { StyleSheet } from 'react-native';
 
 export const setFontStyles = (font?: any) => ({
-    // fontFamily: font?.family ?? 'OpenSans',
+    fontFamily: 'OpenSans',
     fontSize: font?.size ?? 16,
-    // fontWeight: font?.weight ?? 'normal',
+    fontWeight: font?.weight ?? 'normal',
 });
 
 export const GlobalStyles = StyleSheet.create({

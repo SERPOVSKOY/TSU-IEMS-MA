@@ -2,6 +2,7 @@ import { Modal, Text, View, Linking, ScrollView } from 'react-native';
 import React, { FC } from 'react';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { styles } from './styles';
+import { WebView } from 'react-native-webview';
 
 const InfoModal: FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
     return (
@@ -38,7 +39,7 @@ const InfoModal: FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClo
                         После выполнения всех заданий Вы можете ознакомиться с итогами перейдя в тревью вкладку нижнего меню
                     </Text>
                 </View>
-                {/* <iframe width="100%" height="500px" src="https://docs.google.com/presentation/d/1BtAjgAr0UtssExSMNzv21FeLo1kXsels/embed?authuser=0"> </iframe> */}
+                <WebView style={{ height: 500 }} source={{ uri: 'https://docs.google.com/presentation/d/1BtAjgAr0UtssExSMNzv21FeLo1kXsels/embed?authuser=0' }} />
             </ScrollView>
         </Modal>
     );

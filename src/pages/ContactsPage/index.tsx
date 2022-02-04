@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Linking, ScrollView, Text, View } from 'react-native';
+import { Image, Linking, ScrollView, Text, View, TouchableOpacity } from 'react-native';
 import { Styles } from './styles';
 
 const ContactsPage = () => {
@@ -14,21 +14,31 @@ const ContactsPage = () => {
             </View>
             <Text style={Styles.title3}>Контакты</Text>
             <View style={Styles.containerCon}>
-                <View style={Styles.con}>
-                    <Text style={Styles.link} onPress={() => Linking.openURL('https://vk.com/lewcamp')}>
-                        Группа ЛЭВ
-                    </Text>
-                </View>
-                <View style={Styles.con}>
-                    <Text style={Styles.link} onPress={() => Linking.openURL('http://lev-tmb.ru/')}>
-                        Сайт ЛЭВ
-                    </Text>
-                </View>
-                <View style={Styles.con}>
-                    <Text style={Styles.link} onPress={() => Linking.openURL('https://vk.com/tsu_econom')}>
-                        Группа ИЭУиС
-                    </Text>
-                </View>
+                <TouchableOpacity onPress={() => {
+                    Linking.openURL('https://vk.com/lewcamp')
+                }}>
+                    <View style={Styles.con}>
+                        <Text style={Styles.link}>Группа ЛЭВ</Text>
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => {
+                    Linking.openURL('http://lev-tmb.ru')
+                }}>
+                    <View style={Styles.con}>
+                        <Text style={Styles.link}>
+                            Сайт ЛЭВ
+                        </Text>
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => {
+                    Linking.openURL('https://vk.com/tsu_econom')
+                }}>
+                    <View style={Styles.con}>
+                        <Text style={Styles.link}>
+                            Группа ИЭУиС
+                        </Text>
+                    </View>
+                </TouchableOpacity>
             </View>
         </ScrollView>
     );
